@@ -6,7 +6,7 @@ import style from './css/login.module.css'
 const Login: React.FC = () => {
   const navigate = useNavigate()
   const toMain = () => {
-    navigate('/home', { replace: true })
+    navigate('/home/monitor', { replace: true })
   }
   return (
     <Row justify="center">

@@ -67,7 +67,7 @@ const HomeSider = () => {
       trigger={null}
     >
       <Menu
-        defaultSelectedKeys={['/home/monitor']}
+        defaultSelectedKeys={['monitor']}
         onClick={clickMenuItem}
         mode="inline"
         openKeys={openKeys}
