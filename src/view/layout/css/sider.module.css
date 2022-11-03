@@ -1,0 +1,17 @@
+.sider {
+  height: calc(100vh - 64px);
+  background-color: #fff !important;
+}
+.collapse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 48px;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+}
+.svg {
+  cursor: pointer;
+  font-size: 22px;
+}
