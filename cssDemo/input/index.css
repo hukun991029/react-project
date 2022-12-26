@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.item {
+  position: relative;
+  margin-bottom: 50px;
+}
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+input:focus + label {
+  top: -20px;
+  transform: scale(0.8);
+}
+input:valid + label {
+  top: -20px;
+  transform: scale(0.8);
+}

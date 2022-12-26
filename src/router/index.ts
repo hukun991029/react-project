@@ -1,8 +1,10 @@
 import { Outlet } from 'react-router-dom'
-import Login from '../view/login/login'
+import Login from '@/view/login/login'
 import type { RouterOptions } from './type'
-import Home from '../view/layout/index'
-
+import Home from '@/view/layout/index'
+import listPage from '@/view/manage/list/index'
+import ClassComponent from '@/view/manage/class-component'
+import Father from '@/view/test/father'
 const defaultRouter: RouterOptions[] = [
   {
     path: '/home',
@@ -12,12 +14,12 @@ const defaultRouter: RouterOptions[] = [
       {
         path: 'monitor',
         label: '数据概览',
-        component: Login
+        component: Father
       },
       {
         path: 'dashboard',
         label: '数据分析',
-        component: Login
+        component: listPage
       }
     ]
   },
@@ -29,7 +31,7 @@ const defaultRouter: RouterOptions[] = [
       {
         path: 'aaaa',
         label: '数据概览',
-        component: Login
+        component: ClassComponent
       },
       {
         path: 'bbb',

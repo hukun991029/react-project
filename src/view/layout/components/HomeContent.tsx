@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom'
 const { Content } = Layout
 const HomeContent = () => {
   return (
-    <Content>
+    <Content style={{ overflow: 'auto' }}>
       <Outlet></Outlet>
     </Content>
   )

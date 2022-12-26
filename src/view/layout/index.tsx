@@ -5,10 +5,10 @@ import HomeContent from './components/HomeContent'
 // import HomeFooter from './components/HomeFooter'
 const Home = () => {
   return (
-    <Layout>
+    <Layout style={{ height: '100vh' }}>
       <HomeHeader>Header</HomeHeader>
       <Layout>
-        <HomeSider>Sider</HomeSider>
+        <HomeSider style={{ height: '100vh - 64px' }}>Sider</HomeSider>
         <HomeContent>Content</HomeContent>
       </Layout>
       {/* <HomeFooter>Footer</HomeFooter> */}

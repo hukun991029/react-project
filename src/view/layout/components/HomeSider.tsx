@@ -61,10 +61,10 @@ const HomeSider = () => {
   }
   return (
     <Sider
-      className={style.sider}
       collapsible
       collapsed={collapsed}
       trigger={null}
+      style={{ height: 'calc(100vh - 112px)', backgroundColor: '#fff' }}
     >
       <Menu
         defaultSelectedKeys={['monitor']}
@@ -79,5 +79,4 @@ const HomeSider = () => {
     </Sider>
   )
 }
-// onCollapse={value => setCollapsed(value)}
 export default HomeSider

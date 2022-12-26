@@ -4,7 +4,10 @@ const Collapse = props => {
   return (
     <div
       className={style.collapse}
-      style={{ width: props.collapsed ? '80px' : '200px' }}
+      style={{
+        width: props.collapsed ? '80px' : '200px',
+        backgroundColor: '#fff'
+      }}
     >
       {props.collapsed ? (
         <MenuUnfoldOutlined

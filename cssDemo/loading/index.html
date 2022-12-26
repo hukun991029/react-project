@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> -->
+  </body>
+  <script>
+    // function intersect(nums1, nums2) {
+    //   let map1 = new Map()
+    //   let map2 = new Map()
+    //   let res = []
+    //   var setMap = function (list, map) {
+    //     list.forEach(function (item) {
+    //       if (map.has(item)) {
+    //         map.set(item, map.get(item) + 1)
+    //       } else {
+    //         map.set(item, 1)
+    //       }
+    //     })
+    //   }
+    //   setMap(nums1, map1)
+    //   setMap(nums2, map2)
+    //   map1.forEach(function (value, key) {
+    //     if (map2.has(key)) {
+    //       let min = Math.min(value, map2.get(key))
+    //       for (let i = 0; i < min; i++) {
+    //         res.push(key)
+    //       }
+    //     }
+    //   })
+    //   return res
+    // }
+    // console.log(intersect([1, 2, 2, 1], [2, 2]))
+
+    function findMaxAverage(nums, k) {
+      let sum = 0
+      for (let i = 0; i < k; i++) {
+        sum += nums[i]
+      }
+      console.log(sum)
+      for (let i = k; i < nums.length; i++) {
+        sum = Math.max(sum, sum - nums[i - k] + nums[i])
+      }
+      return sum / k
+    }
+    console.log(findMaxAverage([1, 12, -5, -6, 50, 3], 4))
+  </script>
+</html>
